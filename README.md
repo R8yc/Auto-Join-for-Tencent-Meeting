@@ -21,7 +21,7 @@ This project provides a lightweight automation tool to schedule and auto-join Te
 ①下載並安裝 `Python`。Download and install `Python 3`. 在from `python.org`.
 <br><img width="600" height="518" alt="image" src="https://github.com/user-attachments/assets/3a75e5b5-b9b3-43e4-827e-db239fe0978a" />
 
-<br><br>②安裝時勾選 `Add Python to PATH`。During installation, check `Add Python to PATH`.
+<br>②安裝時勾選 `Add Python to PATH`。During installation, check `Add Python to PATH`.
 <br><img width="600" height="412" alt="image" src="https://github.com/user-attachments/assets/d4eca703-ccfe-4f3e-9b57-322dd722b9bf" />
 <img width="600" height="412" alt="image" src="https://github.com/user-attachments/assets/d9e7248a-95c4-4464-90e8-a92dbfcf45d7" />
 
@@ -33,12 +33,12 @@ python --version
 <img width="600" height="716" alt="image" src="https://github.com/user-attachments/assets/d9106113-c34b-401f-8d0e-7df83045931c" />
 <img width="600" height="264" alt="image" src="https://github.com/user-attachments/assets/47459eff-7c7b-4c7f-8f9a-b2a127296c1d" />
 
-<br><br>④安裝 `騰訊會議 (Tencent Meeting)` 客戶端，並先手動登入一次。Install the `Tencent Meeting` application and log in manually once.
+<br>④安裝 `騰訊會議 (Tencent Meeting)` 客戶端，並先手動登入一次。Install the `Tencent Meeting` application and log in manually once.
 <br>測試：按 `Win + R`，輸入:  Test: press `Win + R`, then input:
 ```text
 wemeet://page/inmeeting?meeting_code=123456789
 ```
-<br>彈出騰訊會議,顯示無效會議號，代表協議已註冊成功。/If Tencent Meeting launches with “invalid meeting code”, the protocol is successfully registered.
+<br>彈出騰訊會議，顯示`無效會議號`，代表協議已註冊成功。If Tencent Meeting launches with `invalid meeting code`, the protocol is successfully registered.
 <img width="600" height="676" alt="image" src="https://github.com/user-attachments/assets/3ef080e9-5a26-4365-996c-3135d83e0f85" />
 
 
@@ -47,7 +47,7 @@ wemeet://page/inmeeting?meeting_code=123456789
 ①解壓 GitHub 下載的壓縮包,放到一個固定目錄,例如我放到python的安裝路徑下。/Extract the GitHub package and place it in a fixed directory, for example under your Python installation path.
 <br>②目前文件夾裡面共有5個文件/There are currently five files in the folder.
 <img width="600" height="310" alt="image" src="https://github.com/user-attachments/assets/919a6c9a-c085-4549-bb81-7d077ceaa097" />
-<br><br>③修改 `meeting.txt` 裡面的會議時間，每行一個會議：  Edit the meeting times in `meeting.txt`, one meeting per line:
+<br>③修改 `meeting.txt` 裡面的會議時間，每行一個會議：  Edit the meeting times in `meeting.txt`, one meeting per line:
 ```text
 2025年06月30日09:00,123456789
 2025年07月01日14:30,123456789
@@ -58,19 +58,19 @@ wemeet://page/inmeeting?meeting_code=123456789
 ## 3. 執行腳本 / Run the Script
 
 ①雙擊 `refresh.bat`，即可讀取 `meetings.txt` 並在任務排程器中自動建立任務。\simply double-click `refresh.bat` to read `meetings.txt` and automatically create tasks in Task Scheduler.
-<br>②每次修改 `meetings.txt`，都要再次雙擊 `refresh.bat` 來刷新任務。\Each time you update `meetings.txt`, run `refresh.bat` again to refresh tasks.
+<br><br>②每次修改 `meetings.txt`，都要再次雙擊 `refresh.bat` 來刷新任務。\Each time you update `meetings.txt`, run `refresh.bat` again to refresh tasks.
 <img width="600" height="301" alt="6dea24057531948896869f9d34b9c737" src="https://github.com/user-attachments/assets/4dd33b0b-9c89-4ceb-832d-6429e552396b" />
 
 ## 驗證效果 / Verify the Result
 ①打開 `任務排程器/任務計劃程序 (win+R -> taskschd.msc)`。Open `Task Scheduler (win+R -> taskschd.msc)`.
-<br>②你會在 `任務計劃程序庫`看到任務名稱類似：\In `Task Scheduler Library`, You will see tasks named like:
+<br>②你會在 `任務計劃程序庫`看到任務名稱類似： In `Task Scheduler Library`, You will see tasks named like:
 ```text
 AUTO_WEMEET-932222232-2025_06_30_09_00
 ```
 <img width="600" height="234" alt="f2fff8b51567418b43fc675c629fe61e" src="https://github.com/user-attachments/assets/0c337b1f-1ec8-442c-b60e-095b3dc40117" />
 
-<br>③觸發時間 = 會議時間`前 5 分鐘`。\Trigger time = `5 minutes before` the meeting.
-<br>④任務運行時會生成並運行的 `.bat`：\When triggered, the task generated and runs the `.bat`:
-<br>⑤打開騰訊會議\Launch Tencent Meeting
-<br>⑥自動刪除 `.bat` \ Auto-delete `.bat`
-<br>⑦任務在運行後`5 分鐘過期`(Triggers-Edit)，過期後`1分鐘`自動從任務排程器`移除`(Settings)。\The task `expires 5 minutes` after execution and is automatically `removed` from Task Scheduler `1 minute` after expiration.
+<br>③觸發時間 = 會議時間`前 5 分鐘`。 Trigger time = `5 minutes before` the meeting.
+<br>④任務運行時會生成並運行的 `.bat`： When triggered, the task generated and runs the `.bat`:
+<br>⑤打開騰訊會議  Launch Tencent Meeting
+<br>⑥自動刪除 `.bat`  Auto-delete `.bat`
+<br>⑦任務在運行後`5 分鐘過期`(Triggers-Edit)，過期後`1分鐘`自動從任務排程器`移除`(Settings)。The task `expires 5 minutes` after execution and is automatically `removed` from Task Scheduler `1 minute` after expiration.
