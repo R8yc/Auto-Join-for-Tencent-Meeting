@@ -57,8 +57,8 @@ wemeet://page/inmeeting?meeting_code=123456789
 
 ## 3. 執行腳本  Run the Script
 
-①雙擊 `refresh.bat`，即可讀取 `meetings.txt` 並在任務排程器中自動建立任務。\simply double-click `refresh.bat` to read `meetings.txt` and automatically create tasks in Task Scheduler.
-<br><br>②每次修改 `meetings.txt`，都要再次雙擊 `refresh.bat` 來刷新任務。\Each time you update `meetings.txt`, run `refresh.bat` again to refresh tasks.
+①雙擊 `refresh.bat`，即可讀取 `meetings.txt` 並在任務排程器中自動建立任務。Simply double-click `refresh.bat` to read `meetings.txt` and automatically create tasks in Task Scheduler.
+<br><br>②每次修改 `meetings.txt`，都要再次雙擊 `refresh.bat` 來刷新任務。Each time you update `meetings.txt`, run `refresh.bat` again to refresh tasks.
 <br><img width="600" height="182" alt="6dea24057531948896869f9d34b9c737" src="https://github.com/user-attachments/assets/4dd33b0b-9c89-4ceb-832d-6429e552396b" />
 
 ## 驗證效果  Verify the Result
