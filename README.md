@@ -18,7 +18,7 @@ This project provides a lightweight automation tool to schedule and auto-join Te
 # 詳細使用說明  User Guide
 
 ## 1、環境準備  Environment Setup
-①下載並安裝 `Python`。Download and install `Python 3`. 在from `python.org`.
+①下載並安裝 `Python`。Download and install `Python`. 在from `python.org`.
 <br><img width="600" height="518" alt="image" src="https://github.com/user-attachments/assets/3a75e5b5-b9b3-43e4-827e-db239fe0978a" />
 
 <br>②安裝時勾選 `Add Python to PATH`。During installation, check `Add Python to PATH`.
@@ -42,10 +42,10 @@ wemeet://page/inmeeting?meeting_code=123456789
 <br><img width="600" height="676" alt="image" src="https://github.com/user-attachments/assets/3ef080e9-5a26-4365-996c-3135d83e0f85" />
 
 
-## 2. 部署腳本 / Deploy the Script
+## 2. 部署腳本  Deploy the Script
 
-①解壓 GitHub 下載的壓縮包,放到一個固定目錄,例如我放到python的安裝路徑下。/Extract the GitHub package and place it in a fixed directory, for example under your Python installation path.
-<br><br>②目前文件夾裡面共有5個文件/There are currently five files in the folder.
+①解壓 GitHub 下載的壓縮包,放到一個固定目錄,例如我放到python的安裝路徑下。Extract the GitHub package and place it in a fixed directory, for example under your Python installation path.
+<br><br>②目前文件夾裡面共有5個文件。There are currently five files in the folder.
 <br><img width="600" height="310" alt="image" src="https://github.com/user-attachments/assets/919a6c9a-c085-4549-bb81-7d077ceaa097" />
 <br>③修改 `meeting.txt` 裡面的會議時間，每行一個會議：  Edit the meeting times in `meeting.txt`, one meeting per line:
 ```text
@@ -55,13 +55,13 @@ wemeet://page/inmeeting?meeting_code=123456789
 <br>日期時間格式必須是 `YYYY年MM月DD日HH:MM`（24 小時制），會議號用`半角逗號`分隔，冇空格。Date/time must follow `YYYY年MM月DD日HH:MM` (24-hour format), separated from the meeting code by a `comma` without `space`.
 
 
-## 3. 執行腳本 / Run the Script
+## 3. 執行腳本  Run the Script
 
 ①雙擊 `refresh.bat`，即可讀取 `meetings.txt` 並在任務排程器中自動建立任務。\simply double-click `refresh.bat` to read `meetings.txt` and automatically create tasks in Task Scheduler.
 <br><br>②每次修改 `meetings.txt`，都要再次雙擊 `refresh.bat` 來刷新任務。\Each time you update `meetings.txt`, run `refresh.bat` again to refresh tasks.
 <br><img width="600" height="301" alt="6dea24057531948896869f9d34b9c737" src="https://github.com/user-attachments/assets/4dd33b0b-9c89-4ceb-832d-6429e552396b" />
 
-## 驗證效果 / Verify the Result
+## 驗證效果  Verify the Result
 ①打開 `任務排程器/任務計劃程序 (win+R -> taskschd.msc)`。Open `Task Scheduler (win+R -> taskschd.msc)`.
 <br><br>②你會在 `任務計劃程序庫`看到任務名稱類似： In `Task Scheduler Library`, You will see tasks named like:
 ```text
