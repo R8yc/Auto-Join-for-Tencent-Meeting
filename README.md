@@ -12,7 +12,7 @@ This project provides a lightweight automation tool to schedule and auto-join Te
 # 每次預設會議步驟  Steps for Scheduling Meetings
 
 <br>①修改 `meetings.txt` 內的會議時間與會議號。Edit meeting times and codes in `meetings.txt`.
-<br>②然後雙擊 `refresh.bat` 即可完成更新。Then double-click refresh.bat to `refresh tasks`.
+<br>②然後雙擊 `refresh.bat` 即可完成更新。Then double-click `refresh.bat` to refresh tasks.
 
 
 # 詳細使用說明  User Guide
