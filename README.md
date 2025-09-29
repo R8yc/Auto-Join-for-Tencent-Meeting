@@ -45,7 +45,7 @@ wemeet://page/inmeeting?meeting_code=123456789
 ## 2. 部署腳本 / Deploy the Script
 
 ①解壓 GitHub 下載的壓縮包,放到一個固定目錄,例如我放到python的安裝路徑下。/Extract the GitHub package and place it in a fixed directory, for example under your Python installation path.
-<br>②目前文件夾裡面共有5個文件/There are currently five files in the folder.
+<br><br>②目前文件夾裡面共有5個文件/There are currently five files in the folder.
 <br><img width="600" height="310" alt="image" src="https://github.com/user-attachments/assets/919a6c9a-c085-4549-bb81-7d077ceaa097" />
 <br>③修改 `meeting.txt` 裡面的會議時間，每行一個會議：  Edit the meeting times in `meeting.txt`, one meeting per line:
 ```text
@@ -58,7 +58,6 @@ wemeet://page/inmeeting?meeting_code=123456789
 ## 3. 執行腳本 / Run the Script
 
 ①雙擊 `refresh.bat`，即可讀取 `meetings.txt` 並在任務排程器中自動建立任務。\simply double-click `refresh.bat` to read `meetings.txt` and automatically create tasks in Task Scheduler.
-
 <br><br>②每次修改 `meetings.txt`，都要再次雙擊 `refresh.bat` 來刷新任務。\Each time you update `meetings.txt`, run `refresh.bat` again to refresh tasks.
 <br><img width="600" height="301" alt="6dea24057531948896869f9d34b9c737" src="https://github.com/user-attachments/assets/4dd33b0b-9c89-4ceb-832d-6429e552396b" />
 
