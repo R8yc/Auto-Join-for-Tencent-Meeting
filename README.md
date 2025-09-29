@@ -19,18 +19,18 @@ This project provides a lightweight automation tool to schedule and auto-join Te
 
 ## 1、環境準備  Environment Setup
 ①下載並安裝 `Python`。Download and install `Python`. 在from `python.org`.
-<br><img width="600" height="518" alt="image" src="https://github.com/user-attachments/assets/3a75e5b5-b9b3-43e4-827e-db239fe0978a" />
+<br><img width="600" height="260" alt="image" src="https://github.com/user-attachments/assets/3a75e5b5-b9b3-43e4-827e-db239fe0978a" />
 
 <br>②安裝時勾選 `Add Python to PATH`。During installation, check `Add Python to PATH`.
-<br><img width="600" height="412" alt="image" src="https://github.com/user-attachments/assets/d4eca703-ccfe-4f3e-9b57-322dd722b9bf" />
-<img width="600" height="412" alt="image" src="https://github.com/user-attachments/assets/d9e7248a-95c4-4464-90e8-a92dbfcf45d7" />
+<br><img width="600" height="369" alt="image" src="https://github.com/user-attachments/assets/d4eca703-ccfe-4f3e-9b57-322dd722b9bf" />
+<img width="600" height="369" alt="image" src="https://github.com/user-attachments/assets/d9e7248a-95c4-4464-90e8-a92dbfcf45d7" />
 
 <br>③驗證：在 PowerShell 輸入:  Verify: in PowerShell, type: 
 ```powershell  
 python --version
 ```
 <br>應顯示 Python 版本。It should display the Python version.
-<br><img width="600" height="716" alt="image" src="https://github.com/user-attachments/assets/d9106113-c34b-401f-8d0e-7df83045931c" />
+<br><img width="600" height="556" alt="image" src="https://github.com/user-attachments/assets/d9106113-c34b-401f-8d0e-7df83045931c" />
 <img width="600" height="264" alt="image" src="https://github.com/user-attachments/assets/47459eff-7c7b-4c7f-8f9a-b2a127296c1d" />
 
 <br>④安裝 `騰訊會議 (Tencent Meeting)` 客戶端，並先手動登入一次。Install the `Tencent Meeting` application and log in manually once.
@@ -39,7 +39,7 @@ python --version
 wemeet://page/inmeeting?meeting_code=123456789
 ```
 <br>彈出騰訊會議，顯示`無效會議號`，代表協議已註冊成功。If Tencent Meeting launches with `invalid meeting code`, the protocol is successfully registered.
-<br><img width="600" height="676" alt="image" src="https://github.com/user-attachments/assets/3ef080e9-5a26-4365-996c-3135d83e0f85" />
+<br><img width="600" height="397" alt="image" src="https://github.com/user-attachments/assets/3ef080e9-5a26-4365-996c-3135d83e0f85" />
 
 
 ## 2. 部署腳本  Deploy the Script
@@ -59,7 +59,7 @@ wemeet://page/inmeeting?meeting_code=123456789
 
 ①雙擊 `refresh.bat`，即可讀取 `meetings.txt` 並在任務排程器中自動建立任務。\simply double-click `refresh.bat` to read `meetings.txt` and automatically create tasks in Task Scheduler.
 <br><br>②每次修改 `meetings.txt`，都要再次雙擊 `refresh.bat` 來刷新任務。\Each time you update `meetings.txt`, run `refresh.bat` again to refresh tasks.
-<br><img width="600" height="301" alt="6dea24057531948896869f9d34b9c737" src="https://github.com/user-attachments/assets/4dd33b0b-9c89-4ceb-832d-6429e552396b" />
+<br><img width="600" height="182" alt="6dea24057531948896869f9d34b9c737" src="https://github.com/user-attachments/assets/4dd33b0b-9c89-4ceb-832d-6429e552396b" />
 
 ## 驗證效果  Verify the Result
 ①打開 `任務排程器/任務計劃程序 (win+R -> taskschd.msc)`。Open `Task Scheduler (win+R -> taskschd.msc)`.
@@ -67,7 +67,7 @@ wemeet://page/inmeeting?meeting_code=123456789
 ```text
 AUTO_WEMEET-932222232-2025_06_30_09_00
 ```
-<br><img width="600" height="234" alt="f2fff8b51567418b43fc675c629fe61e" src="https://github.com/user-attachments/assets/0c337b1f-1ec8-442c-b60e-095b3dc40117" />
+<br><img width="600" height="120" alt="f2fff8b51567418b43fc675c629fe61e" src="https://github.com/user-attachments/assets/0c337b1f-1ec8-442c-b60e-095b3dc40117" />
 
 <br>③觸發時間 = 會議時間`前 5 分鐘`。 Trigger time = `5 minutes before` the meeting.
 <br>④任務運行時會生成並運行的 `.bat`： When triggered, the task generated and runs the `.bat`:
