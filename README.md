@@ -12,7 +12,8 @@ This project provides a lightweight automation tool to schedule and auto-join Te
 <br>②然後雙擊 `refresh.bat` 即可完成更新。Then double-click refresh.bat to `refresh tasks`.
 # 詳細使用說明  User Guide
 ## 1、環境準備  Environment Setup
-①安裝 Python 3（建議 3.9+）。Install Python 3 (recommended 3.9+).
+①下載並安裝 `Python`。Download and install `Python 3`. 在from `python.org`.
+<br><img width="1194" height="518" alt="image" src="https://github.com/user-attachments/assets/3a75e5b5-b9b3-43e4-827e-db239fe0978a" />
 <br>②安裝時勾選 `Add Python to PATH`。During installation, check `Add Python to PATH`.
 <br>③驗證：在 PowerShell 輸入:  Verify: in PowerShell, type: 
 ```powershell  
